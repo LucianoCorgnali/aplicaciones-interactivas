@@ -1,10 +1,16 @@
 import React from 'react'
+import IMG from "../../assets/img01.jpg"
 
 const PRODUCTOSLISTA = () => {
   return (
-    <div>
-      <h1>PRODUCTOSLISTA</h1>
-    </div>
+    <>
+      <h1 className="title">PRODUCTOS</h1>
+      <div className="productos">
+        <div className="producto">
+          <img src={IMG} alt="" />
+        </div>
+      </div>
+    </>
   )
 }
 
