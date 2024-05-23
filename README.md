@@ -1,2 +1,5 @@
 # aplicaciones-interactivas
-estoy probando github
+
+Integrantes:
+-Facundo Bernard
+-Luciano Corgnali
