@@ -1,16 +1,19 @@
 
+import React from "react";
 import HEADER from "./componentes/HEADER"
-import PRODUCTOSLISTA from "./componentes/PRODUCTOS/index"
-import { BoxIconElement } from "boxicons"; // no sacar
-
-
+import 'boxicons';
+import { BrowserRouter as Router } from "react-router-dom";
+import PAGINAS from "./componentes/PAGINAS"
 function App() {
 
   return (
     <>
       <div className="App">
-      <HEADER/>
-      <PRODUCTOSLISTA/>
+      <Router>
+        <HEADER/>
+
+        <PAGINAS/>
+      </Router>
       </div>
     </>
   )
