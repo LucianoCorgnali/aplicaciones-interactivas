@@ -1,11 +1,15 @@
-import React from 'react'
-
+import CartaDePresentacion from "./cartaDePresentacion.jsx"
+import SeccionPrincipal from "./seccionPrincipal.jsx";
 const INICIO = () => {
   return (
-    <div>
-      INICIO
-    </div>
-  )
-}
+    <>
+  
+    <CartaDePresentacion/>
+    <SeccionPrincipal/>
+    
+    
+    </>
+  );
+};
 
-export default INICIO
+export default INICIO;

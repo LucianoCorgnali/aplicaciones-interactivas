@@ -1,23 +1,42 @@
 import React from 'react'
 import ICONO from  "../../assets/HEADER.jpg";
-
+import { useNavigate } from 'react-router-dom';
 
 export const HEADER = () => {
+
+  // para ir a distintas rutas
+  
+  const navigate = useNavigate()
+
+  const viajarVistaInicio = ()=>{
+    navigate("/")
+
+  }
+
+  const viajarVistaProductos = ()=>{
+    navigate("/productos")
+
+  }
+
+
+
+
+
   return (
     <header>
         
       <a href="#">
         <div className="logo">
-          <img src={ICONO} alt="logo" />
+          <img src={ICONO} alt="logo"  onClick={viajarVistaInicio}/>
         </div>
       </a>
       
       <ul>
         <li>
-          <a href="">INICIO</a>
+          <a href="" onClick={viajarVistaInicio}>INICIO</a>
         </li>
         <li>
-          <a href="">PRODUCTOS</a>
+          <a href="" onClick={viajarVistaProductos}>PRODUCTOS</a>
         </li>
       </ul>
 
